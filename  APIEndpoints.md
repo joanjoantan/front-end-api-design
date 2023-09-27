@@ -1,6 +1,6 @@
 # API Endpoints (Assumptions):
 
-### Authentication Endpoint:
+# Authentication Endpoint:
 
 Route: /api/authenticate
 Method: POST
@@ -16,7 +16,7 @@ Expected Response:
 - On success: { "message": Login successfully", "token": string, UserID: string }
 - On error: { "error": "Error message describing the issue" }
 
-### Customer Management Endpoint:
+# Customer Management Endpoint:
 
 Route: /api/customers
 Methods: POST (Create), PUT (Update), DELETE (Delete)
@@ -35,7 +35,7 @@ Expected Response:
 - On success: { "message": "Customer created/updated/deleted successfully" }
 - On error: { "error": "Error message describing the issue" }
 
-### User Management Endpoint:
+# User Management Endpoint:
 
 Route: /api/users
 Methods: POST (Create), PUT (Update), DELETE (Delete)
@@ -54,7 +54,7 @@ Expected Response:
 - On success: { "message": "User created/updated/deleted successfully" }
 - On error: { "error": "Error message describing the issue" }
 
-### User Settings Endpoint:
+# User Settings Endpoint:
 
 Route: /api/user/settings
 Method: PUT
@@ -67,7 +67,7 @@ Parameters:
 
 Description: This endpoint allows users to update their settings, including language, time zone, and distance units. It should return the updated user settings or an error message.
 
-### Reports Data Endpoint:
+# Reports Data Endpoint:
 
 Route: /api/vehicle-reports
 Method: GET
@@ -83,7 +83,7 @@ Expected Response:
 - On success: JSON data representing the requested vehicle report.
 - On error: { "error": "Error message describing the issue" }
 
-### Vehicle Configuration Endpoint:
+# Vehicle Configuration Endpoint:
 
 Route: /api/vehicle-configuration
 Method: PUT
